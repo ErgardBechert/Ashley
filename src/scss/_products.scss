@@ -1,0 +1,23 @@
+.products{
+    display: flex;
+    .products_one{
+        width: 50%;
+        background: url('../img/Producs-one.jpg') no-repeat;
+        &-link{
+            display: flex;
+            height: 800px;
+            padding: 40px;
+            align-items: end;  
+        }
+    }
+    .products_two{
+        width: 50%;
+        background: url('../img/Producs-two.jpg') no-repeat;
+        &-link{
+            display: flex;
+            height: 800px;
+            padding: 40px;
+            align-items: end;  
+        }
+    }
+}

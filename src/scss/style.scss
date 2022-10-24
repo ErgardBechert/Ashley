@@ -1,4 +1,8 @@
 @import  '../scss/aromat';
+@import  '../scss/block';
+@import  '../scss/products';
+@import  '../scss/aboutUs';
+@import  '../scss/powerHouse';
 /* nullCss*/
 *,
 *::before,
@@ -84,4 +88,41 @@ select {
 ._container{
     max-width: 1380px;
     margin: 0 auto;
+}
+.link-black a{
+  display: inline-block;
+  border-bottom: 1px solid #262626;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+  a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #262626 !important;
+}
+}
+.link-white {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+  a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #fff;
+}
+}
+.link-gray {
+  display: inline-block;
+  border-bottom: 1px solid #B2B2B2;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+  a{
+    text-transform: uppercase;
+    font-size: 12px;
+    color: #B2B2B2;
+}
+}
+.title{
+  font-size: 25px;
+  letter-spacing: 0.5px;
 }

@@ -1,0 +1,24 @@
+.aboutUs{
+    display: flex;
+    align-items: center;
+    margin: 125px 0;
+    &-body {
+        width: 20%;
+        margin: 0 0 0 30px;
+        &__title{
+            margin: 11px 0 0 0;
+            font-size: 28px;
+            line-height: 32px;
+        }
+        &__text1{
+            margin: 39px 0 0 0;
+        }
+        &__text2{
+            margin: 20px 0 0 0;
+            font-size: 16px;
+        }
+        &__link{
+            margin: 20px 0 0 0;
+        }
+    }
+}

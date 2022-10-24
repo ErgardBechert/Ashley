@@ -4,42 +4,249 @@
 
 .aromat-bgc {
   width: 100%;
-  background: url("/src/img/aromat.jpg") no-repeat;
+  background: url("../img/aromat.jpg") no-repeat;
   margin: 0 auto;
 }
 
-.aromat-body__menu {
+.aromat-body {
+  position: relative;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 25px 0;
+  height: 80vh;
+}
+
+.aromat-body__left {
   width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  padding: 25px 0 0 0;
-  height: 77vh;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
 }
 
-.aromat-body__menu-burger {
-  display: flex;
-  justify-content: end;
+.aromat-body__right {
+  width: 25%;
 }
 
-.aromat-body__menu-info {
+.aromat-body__right-info {
+  margin: 45px 0 0 0;
+}
+
+.aromat-body__right-info-link {
+  margin: 22px 0 0 0;
+}
+
+.aromat-body__info {
+  position: absolute;
+  bottom: 5%;
+  right: 0;
+  width: 27%;
+  padding: 48px 70px;
+  background: #000;
+  color: #fff;
+}
+
+.aromat-body__info-link {
+  margin: 5px 0 0 0;
+}
+
+.block .AromaCandles {
+  background-color: #9C8554;
+}
+
+.block .HomePerfume {
+  background-color: #A26779;
+}
+
+.block .Helper {
+  background-color: #504B4D;
+}
+
+.block .Industry {
+  background-color: #B04836;
+}
+
+.block-bgc.AromaCandles {
+  width: 100%;
+  background: url("../img/aromatCandles.jpg") top right no-repeat;
+}
+
+.block-bgc.HomePerfume {
+  width: 100%;
+  background: url("../img/HomePerfume.jpg") top right no-repeat;
+}
+
+.block-bgc.Helper {
+  width: 100%;
+  background: url("../img/Helper.jpg") top right no-repeat;
+}
+
+.block-bgc.Industry {
+  width: 100%;
+  background: url("../img/Industry.jpg") top right no-repeat;
+}
+
+.block-body {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 80vh;
+  padding: 25px 0;
+  color: #B2B2B2;
+}
+
+.block-body__main {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 17%;
+  height: 100%;
+}
+
+.block-body__main-info-link {
+  margin: 22px 0 0 0;
+}
+
+.block-body__footer {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: end;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.products {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
 }
 
-.aromat-body__footer {
-  display: flex;
-  flex-direction: column;
-  justify-content: end;
+.products .products_one {
+  width: 50%;
+  background: url("../img/Producs-one.jpg") no-repeat;
 }
 
-.aromat-body__footer-title {
-  justify-content: start;
+.products .products_one-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  padding: 40px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.products .products_two {
+  width: 50%;
+  background: url("../img/Producs-two.jpg") no-repeat;
+}
+
+.products .products_two-link {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  height: 800px;
+  padding: 40px;
+  -webkit-box-align: end;
+      -ms-flex-align: end;
+          align-items: end;
+}
+
+.aboutUs {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 125px 0;
+}
+
+.aboutUs-body {
+  width: 20%;
+  margin: 0 0 0 30px;
+}
+
+.aboutUs-body__title {
+  margin: 11px 0 0 0;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.aboutUs-body__text1 {
+  margin: 39px 0 0 0;
+}
+
+.aboutUs-body__text2 {
+  margin: 20px 0 0 0;
+  font-size: 16px;
+}
+
+.aboutUs-body__link {
+  margin: 20px 0 0 0;
+}
+
+.powerHouse {
+  background-color: #bebebe;
+}
+
+.powerHouse-bg {
+  width: 100%;
+  background: url("../img/powerHouse.jpg") no-repeat;
+  height: 80vh;
+}
+
+.powerHouse-body {
+  width: 20%;
+}
+
+.powerHouse-body__subtitle {
+  padding: 120px 0 0 0;
+}
+
+.powerHouse-body__title {
+  margin: 11px 0 0 0;
+  font-size: 28px;
+  line-height: 32px;
+}
+
+.powerHouse-body__text {
+  margin: 39px 0 0 0;
+}
+
+.powerHouse-body__link {
+  margin: 3px 0 0 0;
 }
 
 /* nullCss*/
 *,
 *::before,
 *::after {
-  box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
 }
 
 ul, li {
@@ -114,9 +321,12 @@ select {
 
 @media (prefers-reduced-motion: reduce) {
   * {
-    animation-duration: 0.01ms !important;
-    animation-iteration-count: 1 !important;
-    transition-duration: 0.01ms !important;
+    -webkit-animation-duration: 0.01ms !important;
+            animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+            animation-iteration-count: 1 !important;
+    -webkit-transition-duration: 0.01ms !important;
+            transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
 }
@@ -131,3 +341,48 @@ select {
   max-width: 1380px;
   margin: 0 auto;
 }
+
+.link-black a {
+  display: inline-block;
+  border-bottom: 1px solid #262626;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+}
+
+.link-black a a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #262626 !important;
+}
+
+.link-white {
+  display: inline-block;
+  border-bottom: 1px solid #fff;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+}
+
+.link-white a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #fff;
+}
+
+.link-gray {
+  display: inline-block;
+  border-bottom: 1px solid #B2B2B2;
+  padding: 0 0 5px 0;
+  cursor: pointer;
+}
+
+.link-gray a {
+  text-transform: uppercase;
+  font-size: 12px;
+  color: #B2B2B2;
+}
+
+.title {
+  font-size: 25px;
+  letter-spacing: 0.5px;
+}
+/*# sourceMappingURL=style.css.map */

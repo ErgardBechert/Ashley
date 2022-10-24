@@ -1,0 +1,25 @@
+.powerHouse{
+    background-color: #bebebe;
+    &-bg{
+        width: 100%;
+        background: url('../img/powerHouse.jpg') no-repeat;
+        height: 80vh;
+    }
+    &-body{
+        width: 20%;
+        &__subtitle{
+            padding: 120px 0 0 0;
+        }
+        &__title{
+            margin: 11px 0 0 0;
+            font-size: 28px;
+            line-height: 32px;
+        }
+        &__text{
+            margin: 39px 0 0 0;
+        }
+        &__link{
+            margin: 3px 0 0 0;
+        }
+    }
+}

@@ -2,35 +2,44 @@
  background:  #E7F066;
     &-bgc{
         width: 100%;
-        background: url('/src/img/aromat.jpg') no-repeat;
-
+        background: url('../img/aromat.jpg') no-repeat;
         margin: 0 auto;
+    }
+    &-body{
+        position: relative;
+        display: flex;
+        justify-content: space-between;
+        padding: 25px 0;
+        height: 80vh;
+        &__left{
+            width: 100%;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        &__right{
+            width: 25%;
+            &-info{
+                margin: 45px 0 0 0;
         
-    }
-    
-    &-body__menu{
-        width: 100%;
-        display: flex;
-        flex-direction: column;
-        padding: 25px 0 0 0;
-        height: 77vh;
-        &-logo{
+                &-link{
+                    margin: 22px 0 0 0;
+                   
+                }
+            }
         }
-        &-burger{
-            display: flex;
-            justify-content: end;
-        }
-        &-info{
-            display: flex;
-        }
-       
-    }
-    &-body__footer{
-        display: flex;
-        flex-direction: column;
-        justify-content: end;
-        &-title{
-            justify-content: start;
+        &__info{
+            position: absolute;
+            bottom: 5%;
+            right: 0;
+            width: 27%;
+            padding: 48px 70px;
+            background: #000;
+            color: #fff;
+            &-link{
+                margin: 5px 0 0 0;
+                
+            }
         }
     }
 }

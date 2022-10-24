@@ -1,0 +1,55 @@
+.block{
+    .AromaCandles{
+        background-color: #9C8554;
+    }
+    .HomePerfume{
+        background-color: #A26779;
+    }
+    .Helper{
+        background-color: #504B4D;
+    }
+    .Industry{
+        background-color: #B04836;
+    }
+    &-bgc.AromaCandles{
+        width: 100%;
+        background: url('../img/aromatCandles.jpg') top right no-repeat;
+    }
+    &-bgc.HomePerfume{
+        width: 100%;
+        background: url('../img/HomePerfume.jpg') top right no-repeat;
+    }
+    &-bgc.Helper{
+        width: 100%;
+        background: url('../img/Helper.jpg') top right no-repeat;
+    }
+    &-bgc.Industry{
+        width: 100%;
+        background: url('../img/Industry.jpg') top right no-repeat;
+    }
+    &-body{
+        display: flex;
+        height: 80vh;
+        padding: 25px 0;
+        color: #B2B2B2;
+        &__main{
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            width: 17%;
+            height: 100%;
+            &-info{
+                &-link{
+                    margin: 22px 0 0 0;
+                }
+            } 
+        }
+        &__footer{
+            width: 100%;
+            display: flex;
+            justify-content: end;
+            align-items: end;
+        }
+        
+    }
+}
