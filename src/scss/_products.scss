@@ -1,19 +1,25 @@
 .products{
     display: flex;
+  
     .products_one{
-        width: 50%;
+        display: flex;
+        width: 720px;
         background: url('../img/Producs-one.jpg') no-repeat;
         &-link{
+              
+       
             display: flex;
+
             height: 800px;
             padding: 40px;
             align-items: end;  
         }
     }
     .products_two{
-        width: 50%;
+        width: 720px;
         background: url('../img/Producs-two.jpg') no-repeat;
         &-link{
+           
             display: flex;
             height: 800px;
             padding: 40px;
@@ -21,3 +27,11 @@
         }
     }
 }
+@media (max-width: 992px) {
+    .products{
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+}
+

@@ -3,6 +3,7 @@
 @import  '../scss/products';
 @import  '../scss/aboutUs';
 @import  '../scss/powerHouse';
+@import  '../scss/footer';
 /* nullCss*/
 *,
 *::before,
@@ -125,4 +126,9 @@ select {
 .title{
   font-size: 25px;
   letter-spacing: 0.5px;
+}
+@media (max-width: 410px) {
+  .title{
+    font-size: 16px;
+  }
 }

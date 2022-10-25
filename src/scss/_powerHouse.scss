@@ -3,6 +3,7 @@
     &-bg{
         width: 100%;
         background: url('../img/powerHouse.jpg') no-repeat;
+        background-size: cover;
         height: 80vh;
     }
     &-body{
@@ -22,4 +23,15 @@
             margin: 3px 0 0 0;
         }
     }
+}
+@media (max-width: 1200px) {
+    .powerHouse{
+        &-bg{
+            width: 50%;
+        }
+        &-body{
+            width: 50%;
+        }
+    }
+
 }

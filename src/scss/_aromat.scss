@@ -1,12 +1,12 @@
 .aromat{
- background:  #E7F066;
+    background:  #E7F066;
     &-bgc{
         width: 100%;
-        background: url('../img/aromat.jpg') no-repeat;
+        background: url('../img/aromat.jpg') top left no-repeat;
         margin: 0 auto;
+    
     }
     &-body{
-        position: relative;
         display: flex;
         justify-content: space-between;
         padding: 25px 0;
@@ -18,27 +18,108 @@
             justify-content: space-between;
         }
         &__right{
+            position: relative;
             width: 25%;
             &-info{
                 margin: 45px 0 0 0;
         
                 &-link{
                     margin: 22px 0 0 0;
+                    display: inline-block;
+                    border-bottom: 1px solid #262626;
+                    padding: 0 0 5px 0;
+                    cursor: pointer;
+                    a{
+                      text-transform: uppercase;
+                      font-size: 12px;
+                      color: #262626 !important;
+                  }
                    
                 }
             }
         }
         &__info{
             position: absolute;
-            bottom: 5%;
+            bottom: 0;
             right: 0;
-            width: 27%;
-            padding: 48px 70px;
+            padding: 18px 20px;
             background: #000;
             color: #fff;
             &-link{
                 margin: 5px 0 0 0;
+
                 
+            }
+        }
+    }
+}
+
+@media (max-width: 1400px){
+    .aromat{
+        color: #fff;
+        &-bgc{
+            background-size: cover;
+        }
+        &-body{
+            padding: 40px;
+            &__right{
+                width: 40%;
+                &-info{
+                    &-link{
+                        border-bottom: 1px solid #fff ;
+                       a{
+                           color: #fff !important;
+                       }
+                    }
+                }
+            }
+            &__info{
+                right: 3%;
+            }
+        }
+    }
+}
+@media (max-width: 992px){
+    .aromat{
+        &-body{
+            justify-content: none;
+            padding: 40px;
+            &__left{
+                width: 50%;
+            }
+            &__right{
+                width: 50%;
+                &-info{
+                    &-link{
+                        border-bottom: 1px solid #fff ;
+                       a{
+                           color: #fff !important;
+                       }
+                    }
+                }
+            }
+        }
+    }
+}
+@media (max-width: 768px){
+    .aromat{
+        &-body{
+            justify-content: none;
+            flex-wrap: wrap;
+            padding: 40px;
+            &__left{
+                width: 100%;
+            }
+            &__right{
+                width: 100%;
+                &-info{
+                    &-link{
+                        border-bottom: 1px solid #fff ;
+                       a{
+                           color: #fff !important;
+                       }
+                    }
+                }
             }
         }
     }

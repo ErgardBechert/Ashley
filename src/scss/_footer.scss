@@ -1,0 +1,33 @@
+footer{
+    background-color: #262626;
+    padding: 49px 0 ;
+    color: #fff;
+
+}
+.footer{
+    &__title{
+        opacity: 0.4;
+    }
+    &-form{
+        display: flex;
+        gap: 20px;
+        align-items: center;
+        margin: 46px 0 0 0;
+        &__input{
+            border-top: 1px solid #fff ;
+            input{
+                border: none;
+                padding: 8px 0 0 0;
+                color: #fff;
+                background: none;
+                cursor: pointer;
+            }
+        }
+        &__submit{
+            border: none !important;
+            input{
+               opacity: 0.4;
+            }
+        }
+    }
+}

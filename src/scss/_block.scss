@@ -53,3 +53,39 @@
         
     }
 }
+@media (max-width: 992px) {
+    .block{
+        &-bgc.AromaCandles{
+            background-size: cover;
+        }
+        &-body{
+            padding: 25px;
+            &__main{
+                width: 50%;
+            }
+            &__footer{
+                width: 50%;
+            }
+        }
+    }
+}
+@media (max-width: 768px) {
+    .block{
+        &-bgc.AromaCandles{
+            background-size: cover;
+            padding: 25px;
+        }
+        &-body{
+            flex-wrap: wrap;
+         
+            &__main{
+                width: 100%;
+            }
+            &__footer{
+                justify-content: start;
+                width: 100%;
+            }
+        }
+    }
+}
+
