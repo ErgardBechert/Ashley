@@ -5,6 +5,7 @@ footer{
 
 }
 .footer{
+    padding: 0 25px;
     &__title{
         opacity: 0.4;
     }
@@ -30,4 +31,18 @@ footer{
             }
         }
     }
+}
+@media (max-width: 487px) {
+    .footer{
+        &-form{
+            flex-wrap: wrap;
+            &__name{
+                width: 100%;
+            }
+            &__name{
+                width: 100%;
+            }
+        }
+    }
+  
 }

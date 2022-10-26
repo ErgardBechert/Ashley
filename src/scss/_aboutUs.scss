@@ -22,3 +22,28 @@
         }
     }
 }
+@media (max-width: 1200px) {
+    
+    .aboutUs{
+        &__img{
+            width: 50%;
+        }
+        &-body {
+            width: 50%;
+        }
+    }
+}
+@media (max-width: 932px) {
+    
+    .aboutUs{
+        flex-wrap: wrap;
+        &__img{
+            width: 100vh;
+        }
+        &-body {
+            width: 100%;
+            padding: 0 20px;
+            margin: 30px 0 0 0;
+        }
+    }
+}

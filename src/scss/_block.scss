@@ -13,7 +13,9 @@
     }
     &-bgc.AromaCandles{
         width: 100%;
+     
         background: url('../img/aromatCandles.jpg') top right no-repeat;
+        
     }
     &-bgc.HomePerfume{
         width: 100%;
@@ -29,7 +31,6 @@
     }
     &-body{
         display: flex;
-        height: 80vh;
         padding: 25px 0;
         color: #B2B2B2;
         &__main{
@@ -38,6 +39,9 @@
             justify-content: space-between;
             width: 17%;
             height: 100%;
+            &-title{
+                height: 80vh;
+            }
             &-info{
                 &-link{
                     margin: 22px 0 0 0;
@@ -73,7 +77,27 @@
     .block{
         &-bgc.AromaCandles{
             background-size: cover;
-            padding: 25px;
+        }
+        &-bgc.HomePerfume{
+            background-size: cover;
+            .block-body{
+                color: #fff !important;
+            }
+            .block-body__main-info-link a{
+                color: #fff !important;
+            }
+        }
+        &-bgc.Helper{
+            background-size: cover;
+        }
+        &-bgc.Industry{
+            background-size: cover;
+            .block-body{
+                color: #fff !important;
+            }
+            .block-body__main-info-link a{
+                color: #fff !important;
+            }
         }
         &-body{
             flex-wrap: wrap;

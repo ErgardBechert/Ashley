@@ -10,9 +10,11 @@
 
 .aromat-body {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 25px 0;
@@ -22,13 +24,16 @@
 .aromat-body__left {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
 }
@@ -74,7 +79,8 @@
     color: #fff;
   }
   .aromat-bgc {
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .aromat-body {
     padding: 40px;
@@ -96,9 +102,9 @@
 @media (max-width: 992px) {
   .aromat-body {
     -webkit-box-pack: none;
+    -webkit-justify-content: none;
         -ms-flex-pack: none;
             justify-content: none;
-    padding: 40px;
   }
   .aromat-body__left {
     width: 50%;
@@ -117,10 +123,12 @@
 @media (max-width: 768px) {
   .aromat-body {
     -webkit-box-pack: none;
+    -webkit-justify-content: none;
         -ms-flex-pack: none;
             justify-content: none;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     padding: 40px;
   }
   .aromat-body__left {
@@ -175,26 +183,33 @@
 
 .block-body {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  height: 80vh;
   padding: 25px 0;
   color: #B2B2B2;
 }
 
 .block-body__main {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
       -ms-flex-direction: column;
           flex-direction: column;
   -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
       -ms-flex-pack: justify;
           justify-content: space-between;
   width: 17%;
   height: 100%;
+}
+
+.block-body__main-title {
+  height: 80vh;
 }
 
 .block-body__main-info-link {
@@ -204,19 +219,23 @@
 .block-body__footer {
   width: 100%;
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-pack: end;
+  -webkit-justify-content: end;
       -ms-flex-pack: end;
           justify-content: end;
   -webkit-box-align: end;
+  -webkit-align-items: end;
       -ms-flex-align: end;
           align-items: end;
 }
 
 @media (max-width: 992px) {
   .block-bgc.AromaCandles {
-    background-size: cover;
+    -webkit-background-size: cover;
+            background-size: cover;
   }
   .block-body {
     padding: 25px;
@@ -231,18 +250,44 @@
 
 @media (max-width: 768px) {
   .block-bgc.AromaCandles {
-    background-size: cover;
-    padding: 25px;
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+  .block-bgc.HomePerfume {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+  .block-bgc.HomePerfume .block-body {
+    color: #fff !important;
+  }
+  .block-bgc.HomePerfume .block-body__main-info-link a {
+    color: #fff !important;
+  }
+  .block-bgc.Helper {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+  .block-bgc.Industry {
+    -webkit-background-size: cover;
+            background-size: cover;
+  }
+  .block-bgc.Industry .block-body {
+    color: #fff !important;
+  }
+  .block-bgc.Industry .block-body__main-info-link a {
+    color: #fff !important;
   }
   .block-body {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
   }
   .block-body__main {
     width: 100%;
   }
   .block-body__footer {
     -webkit-box-pack: start;
+    -webkit-justify-content: start;
         -ms-flex-pack: start;
             justify-content: start;
     width: 100%;
@@ -251,12 +296,14 @@
 
 .products {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
 }
 
 .products .products_one {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   width: 720px;
@@ -265,11 +312,13 @@
 
 .products .products_one-link {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 800px;
   padding: 40px;
   -webkit-box-align: end;
+  -webkit-align-items: end;
       -ms-flex-align: end;
           align-items: end;
 }
@@ -281,20 +330,24 @@
 
 .products .products_two-link {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   height: 800px;
   padding: 40px;
   -webkit-box-align: end;
+  -webkit-align-items: end;
       -ms-flex-align: end;
           align-items: end;
 }
 
 @media (max-width: 992px) {
   .products {
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
     -webkit-box-pack: center;
+    -webkit-justify-content: center;
         -ms-flex-pack: center;
             justify-content: center;
   }
@@ -302,9 +355,11 @@
 
 .aboutUs {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 125px 0;
@@ -334,6 +389,31 @@
   margin: 20px 0 0 0;
 }
 
+@media (max-width: 1200px) {
+  .aboutUs__img {
+    width: 50%;
+  }
+  .aboutUs-body {
+    width: 50%;
+  }
+}
+
+@media (max-width: 932px) {
+  .aboutUs {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .aboutUs__img {
+    width: 100vh;
+  }
+  .aboutUs-body {
+    width: 100%;
+    padding: 0 20px;
+    margin: 30px 0 0 0;
+  }
+}
+
 .powerHouse {
   background-color: #bebebe;
 }
@@ -341,12 +421,14 @@
 .powerHouse-bg {
   width: 100%;
   background: url("../img/powerHouse.jpg") no-repeat;
-  background-size: cover;
+  -webkit-background-size: cover;
+          background-size: cover;
   height: 80vh;
 }
 
 .powerHouse-body {
   width: 20%;
+  padding: 0 20px;
 }
 
 .powerHouse-body__subtitle {
@@ -368,11 +450,38 @@
 }
 
 @media (max-width: 1200px) {
-  .powerHouse-bg {
-    width: 50%;
+  .powerHouse-body {
+    width: 30%;
   }
+}
+
+@media (max-width: 1200px) {
+  .powerHouse-body {
+    width: 30%;
+  }
+}
+
+@media (max-width: 768px) {
   .powerHouse-body {
     width: 50%;
+  }
+}
+
+@media (min-width: 768px) {
+  .powerHouse-body {
+    width: 50%;
+  }
+}
+
+@media (max-width: 500px) {
+  .powerHouse-body {
+    width: 70%;
+  }
+}
+
+@media (min-width: 500px) {
+  .powerHouse-body {
+    width: 70%;
   }
 }
 
@@ -382,16 +491,22 @@ footer {
   color: #fff;
 }
 
+.footer {
+  padding: 0 25px;
+}
+
 .footer__title {
   opacity: 0.4;
 }
 
 .footer-form {
   display: -webkit-box;
+  display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
   gap: 20px;
   -webkit-box-align: center;
+  -webkit-align-items: center;
       -ms-flex-align: center;
           align-items: center;
   margin: 46px 0 0 0;
@@ -415,6 +530,20 @@ footer {
 
 .footer-form__submit input {
   opacity: 0.4;
+}
+
+@media (max-width: 487px) {
+  .footer-form {
+    -webkit-flex-wrap: wrap;
+        -ms-flex-wrap: wrap;
+            flex-wrap: wrap;
+  }
+  .footer-form__name {
+    width: 100%;
+  }
+  .footer-form__name {
+    width: 100%;
+  }
 }
 
 /* nullCss*/
@@ -502,6 +631,7 @@ select {
     -webkit-animation-iteration-count: 1 !important;
             animation-iteration-count: 1 !important;
     -webkit-transition-duration: 0.01ms !important;
+         -o-transition-duration: 0.01ms !important;
             transition-duration: 0.01ms !important;
     scroll-behavior: auto !important;
   }
@@ -567,4 +697,24 @@ select {
     font-size: 16px;
   }
 }
-/*# sourceMappingURL=style.css.map */
+
+@media (max-width: 1200px) {
+  ._container {
+    max-width: 1140px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 992px) {
+  ._container {
+    max-width: 932px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 768px) {
+  ._container {
+    max-width: 708px;
+    margin: 0 auto;
+  }
+}
